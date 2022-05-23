@@ -80,23 +80,25 @@ const Todo: FC<TodoProps> = () => {
       {
         <div className={"flex justify-between items-center p-2"}>
           <h1 className={"font-bold text-3xl " + textColor}> TO-DO LIST </h1>
-          <div className="flex space-x-2">
-            <h1 className={"font-medium " + textColor}>
-              ToDo: {incomplete.length}
-            </h1>
-            <h1 className={"font-medium " + textColor}>
-              Completed : {complete.length}
-            </h1>
-          </div>
-          {
-            <div className={"items-center  flex space-x-2 "}>
-              <button
-                onClick={toToggleDarkMode}
-                className={" border rounded py-1 px-2 " + bgColor}>
-                <img src={darkModeIcon} />
-              </button>
+          <div className="flex space-x-4 items-center">
+            <div className="flex space-x-2">
+              <h1 className={"font-medium " + textColor}>
+                ToDo: {incomplete.length}
+              </h1>
+              <h1 className={"font-medium " + textColor}>
+                Completed : {complete.length}
+              </h1>
             </div>
-          }
+            {
+              <div className={"items-center  flex space-x-2 "}>
+                <button
+                  onClick={toToggleDarkMode}
+                  className={" border rounded py-1 px-2 " + bgColor}>
+                  <img src={darkModeIcon} />
+                </button>
+              </div>
+            }
+          </div>
         </div>
       }
       <h1 className={"my-2 font-bold text-xl " + textColor}>
