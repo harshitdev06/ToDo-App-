@@ -146,7 +146,7 @@ const Todo: FC<TodoProps> = () => {
               textColor
             }
             onClick={handleToggleForm}>
-            Cancle
+            Cancel
           </button>
         </div>
       )}
